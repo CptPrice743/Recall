@@ -99,9 +99,10 @@ def _extract_with_cookies(url: str) -> dict:
 
     opts: dict = {
         "quiet": True,
+        "no_warnings": True,
         "skip_download": True,
-        "noplaylist": False,          # allow carousels (playlists)
-        "extract_flat": "discard_in_playlist",  # get flat entries without resolving formats
+        "noplaylist": False,
+        "extract_flat": "discard_in_playlist",
         "ignore_no_formats_error": True,
         "cookiesfrombrowser": ("firefox",),
     }

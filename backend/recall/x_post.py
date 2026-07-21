@@ -265,6 +265,7 @@ def _extract_with_cookies(url: str) -> dict | None:
 
     opts: dict = {
         "quiet": True,
+        "no_warnings": True,
         "skip_download": True,
         "noplaylist": False,
         "extract_flat": False,
