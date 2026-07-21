@@ -1,0 +1,161 @@
+# =============================================================================
+# Recall — .gitignore
+# Stack: Python (backend) · Vite/Vanilla JS (frontend) · macOS
+# =============================================================================
+
+docs/
+
+# -----------------------------------------------------------------------------
+# Secrets — NEVER commit these (D21)
+# -----------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Byte-compiled / optimised / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+htmlcov/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# mypy / pyright / ruff caches
+.mypy_cache/
+.ruff_cache/
+.pytype/
+pyrightconfig.json
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# Temporary download files created during ingestion
+*.m4a
+*.mp3
+*.mp4
+*.wav
+*.webm
+recall_ig_*/
+recall_x_*/
+
+
+# -----------------------------------------------------------------------------
+# Node / Frontend (Vite)
+# -----------------------------------------------------------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+
+# Locks — keep package-lock.json but not node_modules state files
+*.tsbuildinfo
+
+# Parcel cache
+frontend/.cache/
+frontend/.parcel-cache/
+
+
+# -----------------------------------------------------------------------------
+# Obsidian vault media cache
+# Cache files written by reddit.py during ingestion (D24)
+# -----------------------------------------------------------------------------
+**/Media/**/.cache/
+
+
+# -----------------------------------------------------------------------------
+# macOS
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+
+# Thumbnails
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# -----------------------------------------------------------------------------
+# Editors & IDEs
+# -----------------------------------------------------------------------------
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# JetBrains (PyCharm, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+Session.vim
+
+# Emacs
+\#*\#
+.\#*
+
+
+# -----------------------------------------------------------------------------
+# Logs & temporary files
+# -----------------------------------------------------------------------------
+*.log
+*.tmp
+*.bak
+*.orig
+failed_embeds.txt
+
+
+# -----------------------------------------------------------------------------
+# Render / deployment artefacts
+# -----------------------------------------------------------------------------
+.render/
+render.yaml.local
